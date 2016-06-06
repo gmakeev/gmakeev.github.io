@@ -1,0 +1,93 @@
+html{
+    background-color: #000;
+}
+body{
+    width: 960px;
+    height: 883px;
+    background: #000 url(../img/bg.jpg) no-repeat center center;
+    margin: auto;
+    font: 10px/12px Tahoma, Verdana, Geneva, sans-serif;
+    color: #e6e6e6;
+}
+.wrap{
+    margin: auto;
+    padding: 50px 67px 30px;
+}
+a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+/*Начало блока header*/
+header{
+    width: auto;
+    position: relative;
+}
+header h1{
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 30%;
+}
+.logo{
+    width: 267px;
+    height: 155px;
+    background: url("../img/palm-tree25.png") no-repeat bottom right;
+    position: relative;
+}
+.logo img{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 38px;
+}
+.contact{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 30px;
+    margin-bottom: 14px;
+}
+.contact h3{
+    font-size: 12px;
+}
+
+/*Окончание блока header, Начало блока main*/
+main{
+    margin: 0 auto;
+}
+figure{
+    width: 265px;
+    height: 183px;
+    margin: 5px 10px 60px 0;
+    float: left;
+}
+figure:nth-child(3){
+    margin-right: 0;
+}
+.photo-border{
+    width: 262px;
+    height: 181px;
+    box-sizing: border-box;
+    padding: 1px;
+    border: 3px solid #9b9b9b;
+    border-radius: 3px;
+}
+.photo-border img{
+    /*display: block;*/
+    width: 99.5%; /*257px;*/
+   /* height: 175px;*/
+    /*margin: 0 auto;*/
+}
+figcaption{
+    margin: 2px;
+    text-align: center;
+    font-size: 15px;
+}
+/*Окончание блока main, Начало блока footer*/
+footer{
+    margin: 140px 0 2px;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+}
