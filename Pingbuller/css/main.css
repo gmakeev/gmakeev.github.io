@@ -1,0 +1,1112 @@
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+    url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+    url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+    url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+    url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* === Общие стили === */
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.left{ float: left;}
+.right{ float: right; }
+a{
+    cursor: pointer;
+}
+
+html, body{
+    height: 100%;
+    margin: 0 auto;
+    font: 100%/1.5rem 'open_sanslight', Arial, Verdana, Geneva, sans-serif;
+}
+h1, h2, h3, h4{
+    font: 3rem/2.125rem league_gothicregular, Arial, Verdana, Geneva, sans-serif;
+}
+.container{
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+}
+/*начало блока header*/
+header{
+    background: #d4cacb url("../img/bg-header-480_70.jpg") no-repeat top center;
+    height: 449px;
+    padding-top: 67px;
+    border-bottom: 1px solid #35273c;
+}
+header .container{
+    position: relative;
+}
+.logo{
+    width: 156px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.logo a{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    display: block;
+    background: url("../img/logo.png") no-repeat top center;
+}
+nav.header-menu{
+    width: 248px;
+    height: 260px;
+    margin: 0 auto;
+
+}
+.top-menu{
+    margin: 0 auto;
+    text-align: center;
+}
+.top-menu .top-menu-item{
+    padding: 0;
+}
+.top-menu .top-menu-item > a{
+    display: block;
+    width: 55px;
+    padding: 1px 10px;
+    margin: auto;
+    border-bottom: 2px solid #edbfff;
+}
+.top-menu li.top-menu-item:hover{
+    border: 1px solid #0d171d;
+    border-radius: 10px 10px 0 0;
+    background: #3f3248;
+    opacity: .8;
+    border-top: 1px solid #503d58;
+    border-bottom: 1px solid #36283e;
+}
+.menu li a{
+    font: 1.5rem/2.5rem league_gothicregular, Arial, Verdana, Geneva, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .4);
+}
+.top-menu .top-menu-submenu{
+    display: none;
+    border: 1px solid #0d171d;
+    border-radius: 0 0 10px 10px;
+}
+.top-menu li.top-menu-item:hover .top-menu-submenu{
+    display: block;
+}
+.top-menu li.top-menu-item:hover .top-menu-submenu li:last-child a{
+    border-bottom: none;
+    z-index: 110;
+}
+.top-menu .submenu-item{
+    background: #3f3248;
+    opacity: .8;
+}
+.top-menu li.submenu-item{
+    display: block;
+    padding: 1px 0;
+}
+.top-menu li.submenu-item:last-child a{
+    border-radius: 0 0 10px 10px;
+}
+.top-menu .submenu-item a{
+    display: block;
+    height: 40px;
+}
+li.submenu-item{
+    border-top: 1px solid #503d58;
+    border-bottom: 1px solid #36283e;
+}
+li.submenu-item:hover a{
+    display: block;
+    border-bottom: 2px solid #edbfff;
+    z-index: 110;
+}
+.overlay{
+    display: block;
+}
+.header-slider{
+    width: auto;
+    height: 190px;
+    margin: -120px auto 0;
+    padding-top: 40px;
+    /*z-index: 5;*/
+}
+.arrows{
+    display: block;
+    width: 30px;
+    height: 40px;
+}
+.prev{
+    background: url("../img/arrows.png") no-repeat 0 0;
+    float: left;
+    margin-left: -10px;
+}
+.next{
+    background: url("../img/arrows.png") no-repeat 0 -40px;
+    float: right;
+}
+.slide-text{
+    width: 100%;
+    margin: 5px auto 0;
+}
+a.slides{
+    display: block;
+    width: 84.375%;
+    margin: -15px auto 0;
+    float: left;
+}
+.slide-text h2 {
+    font-size: 2.25rem;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+    color: #fefefe;
+    margin: 0 auto;
+    text-align: center;
+}
+.slide-text h3{
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #edbfff;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+    margin-top: 5px;
+}
+.slide-text p{
+    display: none;
+}
+.slide-photo{
+    display: none;
+}
+
+/*Окончание блока header, начало блока main*/
+.about-block{
+    background: linear-gradient(to top, #36293d, #765283);
+}
+.about-boxes{
+    padding: 20px;
+}
+.about{
+    width: auto;
+    height: 155px;
+    padding: 3px 6px 7px 10px;
+}
+.about:first-child{
+    margin-top: 50px;
+}
+.about:last-child{
+    margin-bottom: 20px;
+}
+.about > a{
+    width: 27px;
+    float: left;
+    display: block;
+}
+.about h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 50px;
+}
+.about p{
+    height: 68px;
+    font-size: 1rem;
+    color: #fff;
+    overflow: hidden;
+    margin-left: 50px;
+}
+a.read-more{
+    display: block;
+    width: 60px;
+    height: 18px;
+    font: 1.1rem/1.125rem league_gothicregular, Arial, Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    float: right;
+    margin-top: 18px;
+    text-shadow: 0 0 8px rgba(256, 256, 256, .8);
+}
+
+/*окончание блока about-block, начало блока starts-updates*/
+.starts-updates {
+    background: #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
+}
+.starts-updates{
+    height: 623px;/*787px - 67px*2 = 653px - 30px*/
+    padding: 67px 20px 100px;
+}
+.starts{
+    height: 320px;
+    background: #f9f9f9;
+    margin: 0 auto 35px;
+}
+.starts-wh-box{
+    background: #fff;
+    padding: 20px 20px 31px;
+    margin-left: 25px;
+}
+.starts-wh-box > a{
+    display: block;
+    width: 49px;
+    height: 47px;
+    margin-left: -45px;
+    float: left;
+}
+.starts h4{
+    width: 40%;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    color: #454545;
+    margin-left: 14px;
+}
+.starts h4 span{
+    color: #edbfff;
+}
+.starts p{
+    height: 162px;
+    overflow: hidden;
+    font-size: 1rem;
+    color: #454545;
+    margin-left: 14px;
+    padding-right: 30px;
+}
+.updates h4{
+    font-size: 1.9rem;
+    color: #454545;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.updates-item > a{
+    display: block;
+    width: 49px;
+    float: left;
+}
+.updates-item h5{
+    width: 60%;
+    height: 22px;
+    overflow: hidden;
+    margin-left: 63px;
+    font: 100%/1.5rem 'open_sansextrabold', Arial, Verdana, Geneva, sans-serif;
+    color: #454545;
+}
+.updates-item p{
+    width: 77%;
+    height: 22px;
+    overflow: hidden;
+    margin-left: 63px;
+    margin-bottom: 15px;
+    color: #454545;
+}
+a.more-blog-posts{
+    display: block;
+    padding: 2px;
+    text-align: right;
+    font: 1.1rem/1rem league_gothicregular, Arial, Verdana, Geneva, sans-serif;
+    color: #454545;
+    text-transform: uppercase;
+}
+
+/*окончание блока starts-updates, начало блока logos*/
+.logos {
+    background: #f9f9f9;
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.logo-brand{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.logo-brand:nth-child(1){
+    margin-left: 60px;
+    float: left;
+}
+.logo-brand:nth-child(2){
+    margin-right: 60px;
+    float: right;
+}
+.logo-brand:nth-child(3){
+    margin-left: 69px;
+    float: left;
+}
+.logo-brand:nth-child(4){
+    margin-right: 69px;
+    float: right;
+}
+.logo-brand:nth-child(5){
+    margin-left: 40px;
+    float: left;
+    padding-top: 20px;
+}
+.logo-brand:nth-child(6){
+    margin-right: 45px;
+    float: right;
+}
+.logos a{
+    display: block;
+    width: 69px;
+    height: 64px;
+}
+
+/*окончание блока logos, начало блока comments-categories*/
+.comments{
+    display: none;
+}
+
+/*окончание блока comments-categories, начало блока footer*/
+footer{
+    height: 200px;
+    background: url("../img/bg-footer-200_70.jpg") no-repeat top center;
+    padding-top: 38px;
+}
+footer nav ul.menu,
+.footer-menu{
+    display: none;
+}
+.footer-signup{
+    width: 145px;
+    margin: 0 auto;
+}
+.footer-signup a{
+    display: block;
+    padding: 2px;
+    font: .75rem/2.125rem 'open_sanslight', Arial, Verdana, Geneva, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
+}
+.footer-signup a span{
+    font-family: 'open_sansextrabold', Arial, Verdana, Geneva, sans-serif;;
+}
+
+/*Parameters for max-width: 480px;*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container{
+        max-width: 480px;
+    }
+    header{
+        background: #d4cacb url("../img/bg-header-768_70.jpg") no-repeat top center;
+        height: 481px;/*548px(по макету) - 67px(padding-top) = 481px*/
+        padding-top: 67px;
+    }
+    .overlay{
+        display: block;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.2;
+        position: absolute;
+        left: 0;
+        top: 203px;
+        width: 2400px;
+        height: 245px;
+        /*z-index: 103;*/
+    }
+    a.slides {
+        display: block;
+        width: 84.375%;
+        position: relative;
+    }
+    .slide-text h2, .slide-text h3{
+        text-align: left;
+        margin-left: 15px;
+    }
+    .slide-photo{
+        display: block;
+        float: right;
+        width: 185px;
+        position: absolute;
+        top: -94px;
+        right: -23px;
+    }
+    .slides img{
+        width: 100%;
+
+    }
+
+    /*окончание блока starts-updates, начало блока logos*/
+    .logos {
+        background: #f9f9f9;
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    .container{
+        padding-bottom: 20px;
+    }
+    .logo-brand{
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+    .logo-brand:nth-child(1){
+        margin-left: 80px;
+    }
+    .logo-brand:nth-child(2){
+        margin-left: 55px;
+        margin-right: 0;
+        float: left;
+    }
+    .logo-brand:nth-child(3){
+        margin-right: 80px;
+        margin-left: 0;
+        float: right;
+    }
+    .logo-brand:nth-child(4){
+        margin-left: 65px;
+        margin-right: 0;
+        float: left;
+    }
+    .logo-brand:nth-child(5){
+        margin-left: 40px;
+        float: left;
+        padding-top: 20px;
+    }
+    .logo-brand:nth-child(6){
+        margin-right: 75px;
+        float: right;
+    }
+    .logos a{
+        display: inline-block;
+        width: 69px;
+        height: 64px;
+    }
+
+    /*окончание блока logos, начало блока comments-categories*/
+    .comments{
+        display: block;
+        background: #ececec;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .pingbuller-grey, .recent-comments{
+        display: none;
+    }
+    .new-categories{
+        margin: 0 19px 57px;
+    }
+    .new-categories h4{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        color: #454545;
+        margin-bottom: 10px;
+    }
+    .new-categories p{
+        height: 90px;
+        overflow: hidden;
+        font-size: .99rem;
+        line-height: 1.5rem;
+        color: #787878;
+    }
+
+    /*окончание блока comments-categories, начало блока footer*/
+    footer{
+        height: 200px;
+        background: url("../img/bg-footer-200_70.jpg") no-repeat top center;
+        padding-top: 36px;
+    }
+    footer nav ul.menu{
+        display: block;
+    }
+    .footer-menu{
+        margin-left: 20px;
+    }
+    .footer-menu li{
+        display: inline-block;
+    }
+    .menu li{
+        margin: 0 10px;
+    }
+    .menu li:first-child{
+        margin-left: 0;
+    }
+    .menu li a{
+        font-size: 1.25rem;
+    }
+    .footer-signup{
+        width: 145px;
+        margin: 5px auto 0;
+    }
+    .footer-signup a{
+        display: block;
+        padding: 2px;
+        font: .75rem/2.125rem 'open_sanslight', Arial, Verdana, Geneva, sans-serif;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
+    }
+    .footer-signup a span{
+        font-family: 'open_sansextrabold', Arial, Verdana, Geneva, sans-serif;;
+    }
+
+}
+
+/*Parameters for max-width: 768px;*/
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+    .container{
+        max-width: 768px;
+    }
+    header{
+        background: #d4cacb url("../img/bg-header-960_70.jpg") no-repeat top center;
+        height: 733px;/*800px(по макету) - 67px(padding-top) = 733px*/
+        padding-top: 67px;
+    }
+    .logo{
+        margin-left: 11px;
+        width: 100%;
+    }
+    .logo a{
+        width: 156px;
+    }
+    nav.header-menu{
+        width: 650px;
+        height: auto;
+        margin: 15px 0;
+    }
+    .top-menu{
+        margin: 0;
+        float: left;
+    }
+    .top-menu .top-menu-submenu{
+        display: inline-block;
+        float: left;
+        width: 570px;
+        border: none;
+        border-radius: 0;
+    }
+    .top-menu-item > a{
+        float: left;
+    }
+    .top-menu li.submenu-item{
+        background: none;
+        opacity: 1;
+        border: none;
+        float: left;
+    }
+    .submenu-item a{
+        padding: 1px 12px;
+        margin: 0 10px;
+    }
+    .top-menu li.top-menu-item:hover{
+        border: none;
+        border-radius: 0;
+        background: none;
+        opacity: 1;
+    }
+    .submenu-item:hover a{
+        border-bottom: 2px solid #edbfff;
+    }
+    .overlay{
+        display: block;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.2;
+        position: absolute;
+        left: 0;
+        top: 243px;
+        width: 2400px;
+        height: 400px;
+        z-index: 103;
+    }
+    .header-slider{
+        margin: 210px auto 0;
+    }
+    .slide-text h2, .slide-text h3{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .slide-text h2{
+        font-size: 3rem;
+    }
+    .slide-text h3{
+        margin-top: 12px;
+        font-size: 1.5rem;
+    }
+    .slide-photo{
+        display: block;
+        float: right;
+        width: 262px;
+        position: absolute;
+        top: 150px;
+        right: 40px;
+    }
+    .about-block .container{
+        height: 342px;
+    }
+    .about-boxes{
+        padding: 62px 20px;
+    }
+    .about{
+        width: 30.18452380952381%;
+        float: left;
+        margin-left: 10px;
+    }
+    .about:first-child{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .about{
+        margin-top: 10px;
+    }
+    .about p{
+        height: 142px;
+    }
+    .starts-updates{
+        padding-top: 100px;
+        height: 317px;/*487px - 100px = 387px - 70px = 317px*/
+    }
+    .starts{
+        float: left;
+        width: 43.7%;
+        margin-left: 20px;
+        padding-bottom: 7px;
+    }
+    .updates{
+        float: right;
+        width: 43.7%;
+        margin-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .updates h4{
+        margin-bottom: 15px;
+    }
+    .updates-item{
+        margin-bottom: 25px;
+    }
+    a.more-blog-posts{
+        font-size: 1.2rem;
+    }
+
+    /*окончание блока starts-updates, начало блока logos*/
+    .logos {
+        background: #f9f9f9;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .logo-brand{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .logo-brand:nth-child(1){
+        margin-left: 20px;
+    }
+    .logo-brand:nth-child(2){
+        margin-left: 55px;
+        margin-right: 0;
+        float: left;
+    }
+    .logo-brand:nth-child(3){
+        margin-left: 55px;
+        float: left;
+    }
+    .logo-brand:nth-child(4){
+        margin-left: 55px;
+        margin-right: 0;
+        float: left;
+    }
+    .logo-brand:nth-child(5){
+        margin-left: 55px;
+        padding-top: 20px;
+    }
+    .logo-brand:nth-child(6){
+        margin-right: 20px;
+        float: right;
+    }
+    .logos a{
+        display: inline-block;
+        width: 69px;
+        height: 64px;
+    }
+
+    /*окончание блока logos, начало блока comments-categories*/
+    .comments{
+        height: 268px;/*398px - 100px - 30px = 268px*/
+        display: block;
+        background: #ececec;
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    .pingbuller-grey, .recent-comments{
+        display: none;
+    }
+    .new-categories{
+        margin: 0 31px 0 19px;
+        float: left;
+        width: 210px;
+    }
+    .new-categories:last-child{
+        margin-right: 19px;
+    }
+    .new-categories h4{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        color: #454545;
+        margin-bottom: 10px;
+    }
+    .new-categories p{
+        height: 165px;
+        overflow: hidden;
+        font-size: .99rem;
+        line-height: 1.5rem;
+        color: #787878;
+    }
+
+    /*окончание блока comments-categories, начало блока footer*/
+    footer{
+        height: 200px;
+        background: url("../img/bg-footer-200_70.jpg") no-repeat top center;
+        padding-top: 36px;
+    }
+    footer nav ul.menu{
+        display: block;
+    }
+    .footer-menu{
+        margin-left: 20px;
+        float: left;
+    }
+    .footer-menu li{
+        display: inline-block;
+    }
+    footer nav ul.menu li{
+        margin: 0 19px;
+    }
+    footer nav ul.menu li:first-child{
+        margin-left: 0;
+    }
+    footer nav ul.menu li a{
+        font-size: 1.25rem;
+    }
+    .footer-signup{
+        width: 145px;
+        margin-top: 55px;
+        margin-right: 20px;
+        float: right
+    }
+}
+
+/*Parameters for max-width: 960px;*/
+
+@media screen and (min-width: 961px){
+    .container {
+        max-width: 960px;
+    }
+    header {
+        background: #d4cacb url("../img/bg-header-1040_70.jpg") no-repeat top center;
+        height: 778px;/*845px(по макету) - 67px(padding-top) = 778px*/
+        padding-top: 67px;
+    }
+    .logo-menu{
+        margin-bottom: 230px;
+        height: 45px;
+    }
+    .logo{
+        float: left;
+        margin-left: -3px;
+        width: 156px;
+    }
+    .logo a{
+        width: auto;
+    }
+    nav.header-menu{
+        width: 650px;
+        height: auto;
+        float: right;
+    }
+    .top-menu{
+        margin: 0;
+        float: left;
+    }
+    .top-menu .top-menu-submenu{
+        display: inline-block;
+        float: left;
+        width: 570px;
+        border: none;
+        border-radius: 0;
+    }
+    .top-menu-item > a{
+        float: left;
+    }
+    .top-menu li.submenu-item{
+        background: none;
+        opacity: 1;
+        border: none;
+        float: left;
+    }
+    .submenu-item a{
+        padding: 1px 12px;
+        margin: 0 10px;
+    }
+    .top-menu li.top-menu-item:hover{
+        border: none;
+        border-radius: 0;
+        background: none;
+        opacity: 1;
+    }
+    .submenu-item:hover a{
+        border-bottom: 2px solid #edbfff;
+    }
+    .overlay{
+        display: block;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.2;
+        position: absolute;
+        left: 0;
+        top: 278px;
+        width: 2000px;
+        height: 400px;
+        z-index: 103;
+    }
+    .header-slider{
+        margin: 0 auto;
+    }
+    .prev{
+        margin-left: -330px;
+        margin-top: 70px;
+    }
+    .next{
+        background: url("../img/arrows.png") no-repeat 0 -40px;
+        margin-right: -320px;
+        margin-top: 72px;
+    }
+    .slide-text h2, .slide-text h3{
+        text-align: left;
+    }
+    .slide-text h2{
+        font-size: 3.625rem;
+    }
+    .slide-text h3{
+        margin-top: 20px;
+        font-size: 1.625rem;
+    }
+    .slide-text p{
+        display: block;
+        width: 512px;
+        font-size: 1.11rem;
+        margin-top: 10px;
+        color: #fff;
+    }
+    .slide-photo{
+        display: block;
+        float: right;
+        width: 262px;
+        position: absolute;
+        top: 195px;
+        right: 40px;
+    }
+    .about-block .container{
+        height: 342px;
+    }
+    .about-boxes{
+        padding: 62px 20px;
+    }
+    .about{
+        width: 30.18452380952381%;
+        float: left;
+        margin-left: 10px;
+    }
+    .about:first-child{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .about{
+        margin-top: 10px;
+    }
+    .about h3{
+        font-size: 2rem;
+    }
+    .about p{
+        height: 142px;
+    }
+    .starts-updates {
+        background: #f9f9f9;
+        padding: 100px 0 0 0;
+    }
+    .starts{
+        float: left;
+        /*width: 47%;*/
+        width: 47%;
+        padding-bottom: 7px;
+    }
+    .updates{
+        float: right;
+        width: 47%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .updates h4{
+        margin-bottom: 15px;
+    }
+    .updates-item{
+        margin-bottom: 25px;
+    }
+    a.more-blog-posts{
+        font-size: 1.2rem;
+    }
+    .starts-updates{
+        height: 385px;
+    }
+
+    /*окончание блока starts-updates, начало блока logos*/
+    .logos {
+        background: #f9f9f9;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .logo-brand{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .logo-brand:nth-child(1){
+        margin-left: 92px;
+    }
+    .logo-brand:nth-child(2){
+        margin-left: 65px;
+        margin-right: 0;
+        float: left;
+    }
+    .logo-brand:nth-child(3){
+        margin-left: 65px;
+        float: left;
+    }
+    .logo-brand:nth-child(4){
+        margin-left: 65px;
+        margin-right: 0;
+        float: left;
+    }
+    .logo-brand:nth-child(5){
+        margin-left: 65px;
+        padding-top: 20px;
+    }
+    .logo-brand:nth-child(6){
+        margin-right: 92px;
+        float: right;
+    }
+
+    /*окончание блока logos, начало блока comments-categories*/
+    .comments{
+        height: 268px;/*398px - 100px - 30px = 268px*/
+        display: block;
+        background: #ececec;
+        padding-top: 95px;
+        padding-bottom: 34px;
+    }
+    .pingbuller-grey, .recent-comments{
+        display: block;
+    }
+    .pingbuller-grey, .recent-comments,.new-categories{
+        width: 285px;
+        height: 215px;
+        float: left;
+        margin-right: 50px;
+    }
+    .logo-grey{
+        width: 135px;
+        margin-bottom: 10px;
+    }
+    .logo-grey a{
+        width: 100%;
+        height: 40px;
+        padding: 2px 2px 2px 0;
+        display: block;
+        background: url("../img/logo-grey.png") no-repeat top center;
+    }
+    .author{
+        font: italic 1rem/1.5rem Georgia, "Times New Roman", Times, serif;
+        color: #c5c5c5;
+        text-shadow: 1px 0 0 #fff;
+        margin-bottom: 5px;
+    }
+    .recent-comments h4{
+        font-size: 1.875rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+    .recent-comments p{
+        font-size: .99rem;
+    }
+    .new-categories{
+        display: none;
+    }
+    .new-categories:last-child{
+        float: right;
+        margin-right: 0;
+        display: block;
+    }
+    .new-categories h4{
+        font-size: 1.875rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        color: #454545;
+        margin-bottom: 18px;
+    }
+    .new-categories p{
+        height: 165px;
+        overflow: hidden;
+        font-size: .99rem;
+        line-height: 1.5rem;
+        color: #787878;
+    }
+
+    /*окончание блока comments-categories, начало блока footer*/
+    footer{
+        height: 76px;
+        background: url("../img/bg-footer-114_70.jpg") no-repeat top center;
+        padding-top: 40px;
+    }
+    footer nav ul.menu{
+        display: block;
+    }
+    .footer-menu{
+        float: left;
+    }
+    .footer-menu li{
+        display: inline-block;
+    }
+    footer nav ul.menu li{
+        margin: 0 19px;
+    }
+    footer nav ul.menu li:first-child{
+        margin-left: 0;
+    }
+    footer nav ul.menu li a{
+        font-size: 1.25rem;
+    }
+    .footer-signup{
+        width: 145px;
+        margin-top: 0;
+        float: right
+    }
+}

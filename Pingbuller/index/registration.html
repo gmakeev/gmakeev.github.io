@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingbuller</title>
+
+    <link rel="stylesheet" href="../css/main_registration.css">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--начало блока header-->
+    <header>
+        <div class="container">
+            <div class="logo-menu">
+                <div class="logo clearfix"><a href="#"></a></div>
+                <nav class="header-menu clearfix">
+                    <ul class="top-menu menu">
+                        <li class="top-menu-item"><a href="#">Home</a>
+                            <ul class="top-menu-submenu">
+                                <li class="submenu-item"><a href="#">About</a></li>
+                                <li class="submenu-item"><a href="#">Blog</a></li>
+                                <li class="submenu-item"><a href="#">Products</a></li>
+                                <li class="submenu-item"><a href="#">Catalogue</a></li>
+                                <li class="submenu-item"><a href="index/registration.html">Registration</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </header>
+
+    <!--Окончание блока header, начало блока about-block-->
+    <main>
+        <form action="/" method="post">
+            <h2>Registration Form</h2>
+<!--
+            <fieldset class="fb clearfix">
+                <button >
+                    <img src="img/btn-fb.png" alt="button Facebook">
+                </button>
+                <div class="ou-line">
+                    <span>OU</span>
+                </div>
+            </fieldset>-->
+
+            <fieldset class="account-info clearfix">
+                <input type="text" name="first-name" placeholder="First Name" autofocus>
+                <input type="text" name="last-name" placeholder="Last Name">
+                <input type="email" name="e-mail" placeholder="Email Address">
+                <input type="password" name="choose-pass" placeholder="Choose Password">
+                <input type="password" name="confirm-pass" placeholder="Password Confirm">
+            </fieldset>
+
+            <fieldset class="account-action">
+                <label class="clearfix">
+                    <input type="checkbox" name="sendme">
+                    <label class="text_white">Send me Youbike updates and tips</label>
+                </label>
+                <input type="submit" class="btn" name="submit" value="Create my Account">
+            </fieldset>
+            <p>By clicking the button above, you agree to the Terms of Service
+                <br>Xiew our Privacy Policy.
+            </p>
+        </form>
+    </main>
+
+    <!--окончание блока comments-categories, начало блока footer-->
+    <footer>
+        <div class="container">
+            <nav>
+                <ul class="menu footer-menu clearfix">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Dolor sit amet</a></li>
+                </ul>
+            </nav>
+            <div class="footer-signup">
+                <a href="#">Designed by <span>Pingbull AS</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
