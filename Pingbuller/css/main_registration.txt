@@ -49,7 +49,7 @@ a{
 }
 
 html, body{
-    height: 100%;
+    /*height: 100%;*/
     margin: 0 auto;
     font: 100%/1.5rem 'open_sanslight', Arial, Verdana, Geneva, sans-serif;
 }
@@ -92,6 +92,7 @@ nav.header-menu{
 .top-menu{
     margin: 0 auto;
     text-align: center;
+    list-style-type: none;
 }
 .top-menu .top-menu-item{
     padding: 0;
@@ -211,6 +212,7 @@ a.slides{
 }
 
 /*Окончание блока header, начало блока main*/
+
 .about-block{
     background: linear-gradient(to top, #36293d, #765283);
 }
@@ -387,11 +389,130 @@ a.more-blog-posts{
     display: none;
 }
 
-/*окончание блока comments-categories, начало блока footer*/
+/*Registration Form*/
+form{
+    width: 460px;/*old size 560px*/
+    height: 455px;/*old size 612px*/
+    position: absolute;
+    top: 50%;
+    margin-top: -265px;
+    left: 50%;
+    margin-left: -230px;
+    overflow: hidden;
+    font: 14px/14px "Helvetica Neue", Helvetica, Tahoma, Verdana, sans-serif;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .5);
+}
+form h2{
+    font-size: 24px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    padding: 1px 0 22px;
+    border-bottom: 2px solid #fff;
+}
+fieldset {
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+fieldset.fb{
+    /*margin: 0 auto;*/
+    height: 35px;
+    text-align: center;
+    display: block;
+}
+fieldset.fb button{
+    border: none;
+    padding: 0;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 32px;
+}
+.ou-line{
+    background: url("../img/ou-line.png") no-repeat center center;
+    margin: 30px auto;
+}
+fieldset.account-info{
+    display: block;
+    margin-top: 0;
+}
+input{
+    width: 244px;
+    height: auto;
+    background-color: #0f0f0f;
+    margin: 0 auto 17px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    padding: 9px 18px;
+    border: none;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+input:hover, input[autofocus]{
+    background-color: #1b5287;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+fieldset.account-info:last-child{
+    margin-bottom: 0;
+}
+fieldset.account-action{
+    width: 280px;
+    height: 95px;
+    margin-top: 3px;
+}
+fieldset.account-action > label{
+    width: 244px;
+    height: 25px;
+    /*margin: 0 auto;*/
+    display: inline-block;
+    float: left;
+}
+fieldset.account-action > label >input{
+    margin-top: 3px;
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+    float: left;
+}
+fieldset.account-action > label span{
+    display: block;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+.account-action > label{
+    margin-bottom: 15px;
+}
+fieldset.account-action input.btn{
+    width: 150px;
+    font-size: 14px;
+    line-height: 16px;
+    background: linear-gradient(to bottom, #4eabda, #2e7ac4);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+form > p{
+    color: #ccc;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: -10px;
+}
+.text_white{
+    color: #ccc;
+}
+
+/*Footer*/
 footer{
-    height: 200px;
+    height: 75px;
     background: url("../img/bg-footer-200_70.jpg") no-repeat top center;
     padding-top: 38px;
+    margin-top: 88px;
 }
 footer nav ul.menu,
 .footer-menu{
@@ -420,20 +541,10 @@ footer nav ul.menu,
     }
     header{
         background: #d4cacb url("../img/bg-header-768_70.jpg") no-repeat top center;
-        height: 481px;/*548px(по макету) - 67px(padding-top) = 481px*/
+        height: 729px;/*548px(по макету) - 67px(padding-top) = 481px*/
         padding-top: 67px;
     }
-    .overlay{
-        display: block;
-        background-color: rgb(0, 0, 0);
-        opacity: 0.2;
-        position: absolute;
-        left: 0;
-        top: 203px;
-        width: 2400px;
-        height: 245px;
-        /*z-index: 103;*/
-    }
+
     a.slides {
         display: block;
         width: 84.375%;
@@ -530,9 +641,128 @@ footer nav ul.menu,
         color: #787878;
     }
 
+    /*Registration Form*/
+    form{
+        width: 460px;/*old size 560px*/
+        height: 335px;/*old size 612px*/
+        position: absolute;
+        top: 50%;
+        margin-top: -265px;
+        left: 50%;
+        margin-left: -230px;
+        overflow: hidden;
+        font: 14px/14px "Helvetica Neue", Helvetica, Tahoma, Verdana, sans-serif;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    form h2{
+        font-size: 24px;
+        line-height: 16px;
+        text-align: center;
+        color: white;
+        padding: 1px 0 22px;
+        border-bottom: 2px solid #fff;
+    }
+    fieldset {
+        border: 0;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+    }
+    fieldset.fb{
+        /*margin: 0 auto;*/
+        height: 35px;
+        text-align: center;
+        display: block;
+    }
+    fieldset.fb button{
+        border: none;
+        padding: 0;
+        height: 35px;
+        border-radius: 5px;
+        margin-top: 32px;
+    }
+    .ou-line{
+        background: url("../img/ou-line.png") no-repeat center center;
+        margin: 30px auto;
+    }
+    fieldset.account-info{
+        display: block;
+        margin-top: 0;
+    }
+    input{
+        width: 244px;
+        height: auto;
+        background-color: #0f0f0f;
+        margin: 0 auto 17px;
+        color: #ccc;
+        font-size: 14px;
+        line-height: 16px;
+        display: block;
+        padding: 9px 18px;
+        border: none;
+        box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    }
+    input:hover, input[autofocus]{
+        background-color: #1b5287;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+    }
+    fieldset.account-info:last-child{
+        margin-bottom: 0;
+    }
+    fieldset.account-action{
+        width: 280px;
+        height: 95px;
+        margin-top: 3px;
+    }
+    fieldset.account-action > label{
+        width: 244px;
+        height: 25px;
+        /*margin: 0 auto;*/
+        display: inline-block;
+        float: left;
+    }
+    fieldset.account-action > label >input{
+        margin-top: 3px;
+        margin-right: 7px;
+        width: 12px;
+        height: 12px;
+        float: left;
+    }
+    fieldset.account-action > label span{
+        display: block;
+        margin-left: 5px;
+        font-size: 14px;
+        color: #ccc;
+    }
+    .account-action > label{
+        margin-bottom: 15px;
+    }
+    fieldset.account-action input.btn{
+        width: 150px;
+        font-size: 14px;
+        line-height: 16px;
+        background: linear-gradient(to bottom, #4eabda, #2e7ac4);
+        color: #fff;
+        padding: 8px 10px;
+        border-radius: 3px;
+    }
+    form > p{
+        color: #ccc;
+        font-size: 11px;
+        line-height: 16px;
+        text-align: center;
+        margin-top: -10px;
+    }
+    .text_white{
+        color: #ccc;
+    }
+
+
     /*окончание блока comments-categories, начало блока footer*/
     footer{
-        height: 200px;
+        height: 164px;
         background: url("../img/bg-footer-200_70.jpg") no-repeat top center;
         padding-top: 36px;
     }
@@ -627,7 +857,7 @@ footer nav ul.menu,
     .submenu-item:hover a{
         border-bottom: 2px solid #edbfff;
     }
-    .overlay{
+    /*.overlay{
         display: block;
         background-color: rgb(0, 0, 0);
         opacity: 0.2;
@@ -637,7 +867,7 @@ footer nav ul.menu,
         width: 2400px;
         height: 400px;
         z-index: 103;
-    }
+    }*/
     .header-slider{
         margin: 210px auto 0;
     }
@@ -706,6 +936,17 @@ footer nav ul.menu,
     }
     a.more-blog-posts{
         font-size: 1.2rem;
+    }
+
+    /*Registration Form*/
+    /*Form*/
+    form {
+        width: 460px; /*old size 560px*/
+        height: 512px; /*old size 612px*/
+        position: absolute;
+        top: 50%;
+        margin-top: -215px;
+
     }
 
     /*окончание блока starts-updates, начало блока logos*/
@@ -785,7 +1026,7 @@ footer nav ul.menu,
 
     /*окончание блока comments-categories, начало блока footer*/
     footer{
-        height: 200px;
+        height: 164px;
         background: url("../img/bg-footer-200_70.jpg") no-repeat top center;
         padding-top: 36px;
     }
@@ -876,7 +1117,7 @@ footer nav ul.menu,
     }
     .submenu-item:hover a{
         border-bottom: 2px solid #edbfff;
-    }
+    }/*
     .overlay{
         display: block;
         background-color: rgb(0, 0, 0);
@@ -884,10 +1125,10 @@ footer nav ul.menu,
         position: absolute;
         left: 0;
         top: 278px;
-        width: 2000px;
+        width: 1500px;
         height: 400px;
         z-index: 103;
-    }
+    }*/
     .header-slider{
         margin: 0 auto;
     }
@@ -1080,7 +1321,7 @@ footer nav ul.menu,
         color: #787878;
     }
 
-    /*окончание блока comments-categories, начало блока footer*/
+    /*Footer*/
     footer{
         height: 76px;
         background: url("../img/bg-footer-114_70.jpg") no-repeat top center;
